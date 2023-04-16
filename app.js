@@ -170,6 +170,7 @@ class App{
 
         self.renderer.setAnimationLoop(null);
         }
+        navigator.xr.requestSession( 'immersive-ar', sessionInit).then(onSessionStarted);
     }
     
     requestHitTestSource(){
